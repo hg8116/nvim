@@ -7,6 +7,7 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.number = true
 vim.opt.rnu = false
 
+vim.opt.clipboard:append("unnamedplus")
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
