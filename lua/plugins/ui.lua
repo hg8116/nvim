@@ -66,19 +66,6 @@ return {
       "rcarriga/nvim-notify",
     },
   },
-  -- winbar
-  {
-    "utilyre/barbecue.nvim",
-    name = "barbecue",
-    version = "*",
-    dependencies = {
-      "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons", -- optional dependency
-    },
-    opts = {
-      -- configurations go here
-    },
-  },
   -- indent blankline
   {
     "lukas-reineke/indent-blankline.nvim",
@@ -120,6 +107,20 @@ return {
       -- refer to the configuration section below
     },
   },
+
+  -- winbar
+  -- {
+  --   "utilyre/barbecue.nvim",
+  --   name = "barbecue",
+  --   version = "*",
+  --   dependencies = {
+  --     "SmiteshP/nvim-navic",
+  --     "nvim-tree/nvim-web-devicons", -- optional dependency
+  --   },
+  --   opts = {
+  --     -- configurations go here
+  --   },
+  -- },
   -- buffer line
   --  {
   --    "akinsho/bufferline.nvim",
