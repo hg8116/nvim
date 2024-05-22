@@ -11,10 +11,11 @@ return {
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.formatting.isort,
         null_ls.builtins.formatting.black,
-        require("none-ls.diagnostics.eslint_d"),
+--        require("none-ls.diagnostics.eslint_d"),
       },
     }
 
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<C-s>", vim.lsp.buf.format, {})
   end,
 }
