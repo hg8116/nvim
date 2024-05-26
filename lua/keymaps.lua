@@ -10,7 +10,7 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Save file and quit
 keymap.set("n", "<Leader>w", ":update<Return>", opts)
-keymap.set("n", "<C-s>", ":update<Return>", opts)
+keymap.set({ "n", "v" }, "<C-s>", ":update<Return>", opts)
 keymap.set("n", "<Leader>q", ":quit<Return>", opts)
 keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
 
@@ -23,7 +23,6 @@ keymap.set("n", "tw", ":tabclose<Return>", opts)
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
-
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
@@ -41,5 +40,5 @@ keymap.set("n", "<C-n>", ":Neotree toggle filesystem left<CR>")
 
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
